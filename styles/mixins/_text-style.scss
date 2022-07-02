@@ -1,0 +1,92 @@
+@mixin h1($color) {
+  font-size: $h1-size;
+  line-height: $h1-line-height;
+  letter-spacing: $h1-letter-spacing;
+  color: $color;
+}
+
+@mixin h2($color) {
+  font-size: $h2-size;
+  line-height: $h2-line-height;
+  letter-spacing: $h2-letter-spacing;
+  color: $color;
+}
+
+@mixin h3($color) {
+  font-size: $h3-size;
+  line-height: $h3-line-height;
+  letter-spacing: $h3-letter-spacing;
+  color: $color;
+}
+
+@mixin h4($color) {
+  font-size: $h4-size;
+  line-height: $h4-line-height;
+  letter-spacing: $h4-letter-spacing;
+  color: $color;
+}
+
+@mixin h6($color) {
+  font-size: $h6-size;
+  line-height: $h6-line-height;
+  letter-spacing: $h6-letter-spacing;
+  color: $color;
+}
+
+@mixin button($color) {
+  font-size: $button-size;
+  line-height: $button-line-height;
+  letter-spacing: $button-letter-spacing;
+  color: $color;
+}
+
+@mixin paragraph($color) {
+  font-size: $paragraph-size;
+  line-height: $paragraph-line-height;
+  letter-spacing: $paragraph-letter-spacing;
+  color: $color;
+}
+
+@mixin link($color) {
+  font-size: $link-size;
+  line-height: $link-line-height;
+  letter-spacing: $link-letter-spacing;
+  color: $color;
+}
+
+@mixin mobile($color) {
+  font-size: $mobile-size;
+  line-height: $mobile-line-height;
+  letter-spacing: $mobile-letter-spacing;
+  color: $color;
+}
+
+@mixin text-style($style, $color) {
+  @if ($style == h1) {
+    @include h1($color);
+  }
+  @if ($style == h2) {
+    @include h2($color);
+  }
+  @if ($style == h3) {
+    @include h3($color);
+  }
+  @if ($style == h4) {
+    @include h4($color);
+  }
+  @if ($style == h6) {
+    @include h6($color);
+  }
+  @if ($style == button) {
+    @include button($color);
+  }
+  @if ($style == paragraph) {
+    @include paragraph($color);
+  }
+  @if ($style == link) {
+    @include link($color);
+  }
+  @if ($style == mobile) {
+    @include mobile($color);
+  }
+}
