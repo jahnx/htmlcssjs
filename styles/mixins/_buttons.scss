@@ -1,0 +1,12 @@
+@mixin button($bgc, $width, $ptb, $plr) {
+  background-color: $bgc;
+  width: #{$width}px;
+  padding: #{$ptb}px #{$plr}px;
+  border-radius: 100px;
+  @if ($bgc == $blue) {
+    color: $white;
+  }
+  @if ($bgc == $white) {
+    color: $blue;
+  }
+}

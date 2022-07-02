@@ -33,7 +33,7 @@
   color: $color;
 }
 
-@mixin button($color) {
+@mixin btn($color) {
   font-size: $button-size;
   line-height: $button-line-height;
   letter-spacing: $button-letter-spacing;
@@ -78,7 +78,7 @@
     @include h6($color);
   }
   @if ($style == button) {
-    @include button($color);
+    @include btn($color);
   }
   @if ($style == paragraph) {
     @include paragraph($color);
