@@ -1,0 +1,24 @@
+{
+  "name": "htmlcssjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -wr --source-map true styles/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahnx/htmlcssjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahnx/htmlcssjs/issues"
+  },
+  "homepage": "https://github.com/jahnx/htmlcssjs#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
