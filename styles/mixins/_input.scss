@@ -1,0 +1,6 @@
+@mixin input($width, $br) {
+  width: $width;
+  border-radius: #{$br}px;
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+}
