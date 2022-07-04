@@ -57,6 +57,8 @@
   }
 
   @include responsive() {
+    margin-bottom: 100px;
+
     .section-title {
       width: 100%;
     }

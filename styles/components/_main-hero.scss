@@ -1,0 +1,55 @@
+.main-hero {
+  padding-bottom: 50px;
+
+  .content-container {
+    text-align: center;
+
+    button {
+      @include button($blue, 236, 16, 60);
+      margin-bottom: 59px;
+      font-weight: 700;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 59px;
+
+    h2 {
+      @include text-style(h2, $text);
+      margin-bottom: 17px;
+    }
+
+    p {
+      @include text-style(h4, $second-text);
+      display: flex;
+      width: 285px;
+      margin: 0 auto;
+    }
+  }
+
+  .img-wrapper {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @include responsive {
+    @include flexbox(space-between, center);
+    width: 1240px;
+    margin: 0 auto;
+    padding-bottom: 226px;
+
+    .content-container {
+      width: 532px;
+      text-align: left;
+    }
+
+    .section-title {
+      p {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}
