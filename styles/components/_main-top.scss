@@ -1,0 +1,64 @@
+.main-top {
+  height: 750px;
+
+  background-image: url('../../assets/images/mobile-main.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .content-container {
+    @include flexbox(flex-start, center);
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &-text {
+    margin-top: 142px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    .title {
+      @include text-style(h2, $white);
+      width: 333px;
+      margin-bottom: 17px;
+      font-weight: 400;
+    }
+
+    .sub-title {
+      @include text-style(h4, $white);
+      display: flex;
+      width: 265px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+  }
+
+  button {
+    @include button($blue, 236, 16, 62);
+    margin: 20;
+  }
+
+  @include responsive() {
+    height: 930px;
+    background-image: url('../../assets/images/main.png');
+
+    &-text {
+      width: 786px;
+      margin-top: 256px;
+
+      .title {
+        @include text-style(h1, $white);
+        display: flex;
+        width: 672px;
+        margin: 0 auto 17px;
+      }
+
+      .sub-title {
+        display: flex;
+        flex-direction: column;
+        width: 766px;
+        margin: 0 auto 70px;
+      }
+    }
+  }
+}
