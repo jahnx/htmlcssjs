@@ -12,8 +12,17 @@ html {
 }
 
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  margin: 0 auto;
   font-family: $font-main;
   color: $text;
+
+  @media screen and (max-width: 1279px) {
+    width: 400px;
+  }
 }
 
 h1 {

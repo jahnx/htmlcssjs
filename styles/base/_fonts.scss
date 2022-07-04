@@ -26,39 +26,33 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-menu:before {
+  content: '\e909';
+}
 .ic-brush:before {
   content: '\e900';
-  color: #2091f9;
 }
 .ic-draw:before {
   content: '\e901';
-  color: #2091f9;
 }
 .ic-email:before {
   content: '\e902';
-  color: #2091f9;
 }
 .ic-facebook:before {
   content: '\e903';
-  color: #2091f9;
 }
 .ic-figure:before {
   content: '\e904';
-  color: #2091f9;
 }
 .ic-linkedin:before {
   content: '\e905';
-  color: #2091f9;
 }
 .ic-location:before {
   content: '\e906';
-  color: #2091f9;
 }
 .ic-phone:before {
   content: '\e907';
-  color: #2091f9;
 }
 .ic-twitter:before {
   content: '\e908';
-  color: #2091f9;
 }
