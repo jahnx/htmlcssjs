@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="global-header">
+      <nav class="global-header-nav desktop-only">
+        <h2 class="visually-hidden">메뉴</h2>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/">Product</a></li>
+          <li class="nav-item"><a href="/">Pricing</a></li>
+          <li class="nav-item"><a href="/">About</a></li>
+          <li class="nav-item"><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="global-header-logo">
+        <a href="/">
+          <img src="./assets/logos/logo.png" alt="로고" />
+        </a>
+      </h1>
+
+      <button
+        type="button"
+        class="global-header-menu-icon mobile-only"
+        aria-label="메뉴 열기 버튼"
+      >
+        <i class="ic-menu"></i>
+      </button>
+
+      <div class="global-header-sns desktop-only">
+        <ul class="sns-list">
+          <li class="sns-item">
+            <a href="/">
+              <i class="ic-twitter"></i>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="/">
+              <i class="ic-facebook"></i>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="/">
+              <i class="ic-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="main-top">
+        <h2 class="visually-hidden">Title</h2>
+        <div class="content-container">
+          <div class="main-top-text">
+            <h1 class="title">The best products start with Figma</h1>
+            <p class="sub-title">
+              Most calendars are designed for teams.
+              <span class="desktop-only">
+                Slate is designed for freelancers
+              </span>
+            </p>
+          </div>
+          <button type="button">Try For Free</button>
+        </div>
+      </section>
+
+      <section class="main-features">
+        <div class="section-title">
+          <h2>Features</h2>
+          <p class="main-features-title">
+            Most calendars are designed for teams. <br />
+            <span class="desktop-only">
+              Slate is designed for freelancers
+            </span>
+          </p>
+        </div>
+        <div class="m-video-wrapper mobile-only">
+          <img src="./assets/images/screen-mobile.png" alt="video content" />
+        </div>
+        <ul class="main-features-list">
+          <li class="main-features-item">
+            <i class="ic-figure"></i>
+            <h4>
+              OpenType features<br />
+              Variable fonts
+            </h4>
+            <p>
+              Slate helps you see how <br />many more days you need<br />
+              to work to reach your <br />financial goal.
+            </p>
+          </li>
+          <li class="main-features-item">
+            <i class="ic-draw"></i>
+
+            <h4>Design with real data</h4>
+            <p>
+              Slate helps you see how <br />many more days you need<br />
+              to work to reach your <br />financial goal.
+            </p>
+          </li>
+          <li class="main-features-item">
+            <i class="ic-brush"></i>
+
+            <h4>
+              Fastest way to <br />
+              take action
+            </h4>
+            <p>
+              Slate helps you see how <br />many more days you need<br />
+              to work to reach your <br />financial goal.
+            </p>
+          </li>
+        </ul>
+        <div class="d-video-wrapper desktop-only">
+          <img src="./assets/images/screen-desktop.png" alt="video content" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <aside class="sidebar mobile-only">
+      <nav class="sidebar-nav">
+        <h2 class="visually-hidden">메뉴</h2>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/">Product</a></li>
+          <li class="nav-item"><a href="/">Pricing</a></li>
+          <li class="nav-item"><a href="/">About</a></li>
+          <li class="nav-item"><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-sns">
+        <ul class="sns-list">
+          <li class="sns-item">
+            <a href="/">
+              <i class="ic-twitter"></i>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="/">
+              <i class="ic-facebook"></i>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="/">
+              <i class="ic-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="overlay" aria-hidden></div>
+
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>
