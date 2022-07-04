@@ -10,6 +10,7 @@
   line-height: $h2-line-height;
   letter-spacing: $h2-letter-spacing;
   color: $color;
+  font-weight: 400;
 }
 
 @mixin h3($color) {
@@ -24,6 +25,7 @@
   line-height: $h4-line-height;
   letter-spacing: $h4-letter-spacing;
   color: $color;
+  font-weight: 400;
 }
 
 @mixin h6($color) {
@@ -31,6 +33,7 @@
   line-height: $h6-line-height;
   letter-spacing: $h6-letter-spacing;
   color: $color;
+  font-weight: 400;
 }
 
 @mixin btn($color) {
