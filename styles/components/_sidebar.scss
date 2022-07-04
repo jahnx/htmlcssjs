@@ -1,0 +1,53 @@
+.sidebar {
+  position: fixed;
+  top: 112px;
+  right: auto;
+  z-index: $sidebar-level;
+  width: 400px;
+  height: 205px;
+  padding-top: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  color: $white;
+  text-align: right;
+  background-color: $text;
+  transform: translate3d(0, -400px, 0);
+  transition: transform 300ms ease-in-out;
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
+
+  li {
+    transition: color 300ms ease-in-out;
+  }
+
+  li:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+
+  &-nav {
+    margin-bottom: 20px;
+
+    li {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+  }
+
+  &-sns {
+    ul {
+      @include flexbox(flex-end, center);
+      font-size: 25px;
+    }
+
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
