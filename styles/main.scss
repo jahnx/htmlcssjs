@@ -1,12 +1,29 @@
 @import './constants/colors';
 @import './constants/typography';
+@import './constants/z-indexes';
 
 @import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
+@import './base/globals';
 
 @import './mixins/text-style';
 @import './mixins/flexbox';
 @import './mixins/responsive';
 @import './mixins/buttons';
 @import './mixins/input';
+@import './mixins/scrollbar';
+
+@import './layouts/global-header';
+@import './layouts/global-footer';
+@import './layouts/overlay';
+
+@import './components/sidebar';
+@import './components/main-top';
+@import './components/main-features';
+@import './components/main-hero';
+@import './components/main-newsletter';
+@import './components/main-partners';
+@import './components/main-testimonials';
+@import './components/main-pricing';
+@import './components/main-contact';

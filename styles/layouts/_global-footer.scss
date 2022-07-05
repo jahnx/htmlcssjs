@@ -1,0 +1,68 @@
+.global-footer {
+  padding: 107px 67px;
+  color: $white;
+  text-align: center;
+  background-color: $background;
+
+  a:hover {
+    color: $blue;
+  }
+
+  h3 {
+    @include text-style(h3, $white);
+    margin-bottom: 20px;
+  }
+
+  li {
+    @include text-style(link, $white);
+  }
+
+  &-list-item {
+    margin-bottom: 70px;
+  }
+
+  .contact-info-item {
+    @include flexbox(flex-start, center);
+    margin-bottom: 15px;
+
+    i {
+      font-size: 26px;
+    }
+  }
+
+  .sns {
+    @include flexbox;
+    flex-direction: row;
+
+    i {
+      margin-right: 25px;
+      font-size: 35px;
+    }
+  }
+
+  @include responsive {
+    @include flexbox;
+    flex-direction: row;
+
+    &-list {
+      @include flexbox;
+      flex-direction: row;
+      margin-right: 100px;
+
+      &-item {
+        width: 170px;
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+
+    .contact-container {
+      @include flexbox(flex-start, flex-start);
+      flex-direction: column;
+    }
+
+    .contact-info {
+      margin-bottom: 60px;
+    }
+  }
+}
