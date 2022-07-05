@@ -1,0 +1,160 @@
+.main-contact {
+  padding: 100px 0;
+  text-align: center;
+
+  .section-title {
+    @include flexbox;
+    flex-direction: column;
+    width: 255px;
+    margin: 0 auto;
+
+    h2 {
+      @include text-style(h2, $text);
+      margin-bottom: 27px;
+    }
+
+    p {
+      @include text-style(h4, $second-text);
+      margin-bottom: 60px;
+    }
+  }
+
+  .info-container {
+    @include flexbox;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .sns-list {
+    @include flexbox;
+    flex-direction: row;
+    margin-bottom: 60px;
+
+    i {
+      font-size: 40px;
+      color: $blue;
+    }
+  }
+
+  .contact-info {
+    @include flexbox(center, flex-start);
+    flex-direction: column;
+    margin-bottom: 68px;
+    text-align: left;
+
+    &-item {
+      @include flexbox;
+      flex-direction: row;
+      margin-bottom: 10px;
+
+      i {
+        margin-right: 20px;
+        font-size: 26px;
+        color: $blue;
+      }
+
+      dd {
+        @include text-style(h6, $second-text);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form-container {
+    @include flexbox;
+    flex-direction: column;
+    width: 378px;
+    height: 669px;
+    margin: 0 auto;
+    border: 1px solid $border-gray;
+    border-radius: 20px;
+
+    h3 {
+      @include text-style(h3, $text);
+      margin-bottom: 45px;
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 280px;
+      padding-left: 25px;
+      margin-bottom: 40px;
+      background-color: $input-bg;
+      border: 1px solid $input-border;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+
+    .input-text {
+      height: 54px;
+      border-radius: 50px;
+    }
+
+    .input-textarea {
+      height: 193px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      resize: none;
+    }
+
+    button {
+      @include button($blue, 145, 18, 38);
+    }
+  }
+
+  @include responsive {
+    .section-title {
+      width: 552px;
+
+      p {
+        margin-bottom: 50px;
+      }
+    }
+
+    .content-container {
+      @include flexbox;
+      flex-direction: row-reverse;
+    }
+
+    .info-container {
+      flex-direction: column-reverse;
+      width: 725px;
+      margin: 0;
+    }
+
+    .sns-list {
+      margin-bottom: 0;
+    }
+
+    .contact-info {
+      flex-direction: row;
+      margin-bottom: 50px;
+      text-align: center;
+
+      &-item {
+        @include flexbox(flex-start, center);
+        flex-direction: column;
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .img-wrapper {
+      margin-bottom: 50px;
+    }
+
+    .form-container {
+      margin: 0;
+    }
+  }
+}
