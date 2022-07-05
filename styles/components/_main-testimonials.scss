@@ -1,0 +1,87 @@
+.main-testimonials {
+  @include flexbox;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    @include text-style(h2, $text);
+    margin-top: 110px;
+    margin-bottom: 90px;
+  }
+
+  .logo-img-wrapper {
+    margin-bottom: 45px;
+  }
+
+  p {
+    display: flex;
+    width: 297px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.17px;
+  }
+
+  .client-img-wrapper {
+    width: 42px;
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+      border-radius: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .client-container {
+    @include flexbox;
+    flex-direction: row;
+    height: 42px;
+    margin: 0 auto;
+    margin-bottom: 95px;
+  }
+
+  .client-info {
+    text-align: left;
+
+    h6 {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.08px;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 23px;
+      letter-spacing: 0.17px;
+    }
+  }
+
+  a {
+    @include text-style(h3, $white);
+    @include button($blue, 276, 16, 47);
+    margin-bottom: 100px;
+    font-weight: 700;
+  }
+
+  @include responsive {
+    p {
+      @include text-style(h4, $text);
+      width: auto;
+      font-weight: 400;
+    }
+
+    .client-info {
+      h6 {
+        @include text-style(h6, $second-text);
+      }
+
+      span {
+        @include text-style(link, $text);
+      }
+    }
+  }
+}
