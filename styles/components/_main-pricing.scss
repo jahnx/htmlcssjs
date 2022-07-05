@@ -1,0 +1,110 @@
+.main-pricing {
+  padding: 110px 28px;
+  text-align: center;
+  background-color: $background;
+
+  .section-title {
+    margin-bottom: 80px;
+
+    h2 {
+      @include text-style(h2, $white);
+      margin-bottom: 27px;
+    }
+
+    p {
+      @include text-style(h4, $white);
+    }
+  }
+
+  .price-list {
+    @include flexbox;
+    flex-direction: column;
+  }
+
+  .price-item {
+    @include flexbox;
+    flex-direction: column;
+    width: 335px;
+    height: 607px;
+    margin-bottom: 50px;
+    background-color: $white;
+    border-radius: 10px;
+
+    h3 {
+      @include text-style(h3, $text);
+      margin-bottom: 3px;
+    }
+
+    h6 {
+      @include text-style(h6, $second-text);
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    button {
+      @include button($blue, 255, 18, 75);
+    }
+
+    &.is-standard {
+      background-color: $blue;
+
+      h1,
+      h3,
+      h6,
+      li {
+        color: $white;
+      }
+
+      button {
+        color: $blue;
+        background-color: $white;
+      }
+    }
+  }
+
+  .price-wrapper {
+    @include flexbox;
+    height: 84px;
+
+    h1 {
+      @include text-style(h1, $text);
+      margin-right: 5px;
+    }
+
+    .unit-container {
+      margin-top: 20px;
+      text-align: left;
+    }
+  }
+
+  .price-feature-list {
+    margin-bottom: 30px;
+
+    li {
+      @include text-style(link, $text);
+      padding: 10px;
+    }
+  }
+
+  @include responsive {
+    .price-list {
+      flex-direction: row;
+    }
+
+    .price-item {
+      margin-right: 50px;
+      margin-bottom: 0;
+
+      &.is-standard {
+        height: 683px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
