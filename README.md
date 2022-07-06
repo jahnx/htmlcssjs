@@ -6,8 +6,8 @@
 - Desktop / Mobile 화면 두가지 반응형으로 구현하였으며 break-point는 1280px입니다. <br />
   Tablet 버전이 없는기에 1279px 이하에서는 바로 Mobile 화면으로 전환됩니다.
 
-- Desktop
-  <img src="https://user-images.githubusercontent.com/72085261/177509986-6502c0a7-3ea0-420a-b39c-a2560c6d5edb.gif" width="700px" height ="auto">
+## Desktop
+<img src="https://user-images.githubusercontent.com/72085261/177509986-6502c0a7-3ea0-420a-b39c-a2560c6d5edb.gif" width="700" height ="auto" />
 
-- Mobile
-  <img src="https://user-images.githubusercontent.com/72085261/177510066-40e9fdfd-6f96-4cfa-ae63-4f50c0272518.gif" width="300px" height="auto">
+## Mobile
+<img src="https://user-images.githubusercontent.com/72085261/177510066-40e9fdfd-6f96-4cfa-ae63-4f50c0272518.gif" width="350" height="auto" />
