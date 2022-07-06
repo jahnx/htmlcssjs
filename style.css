@@ -596,7 +596,7 @@ ol {
 
 .main-top {
   height: 750px;
-  background-image: url("../../assets/images/mobile-main.png");
+  background-image: url("./assets/images/mobile-main.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%; }
@@ -641,7 +641,7 @@ ol {
   @media screen and (min-width: 1280px) {
     .main-top {
       height: 930px;
-      background-image: url("../../assets/images/main.png"); }
+      background-image: url("./assets/images/main.png"); }
       .main-top-text {
         width: 786px;
         margin-top: 256px; }
